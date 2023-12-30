@@ -31,6 +31,15 @@
     "e2e": {
       "cache": true,
       "inputs": ["default", "^production"]
+    },
+    "build-storybook": {
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        "{projectRoot}/.storybook/**/*",
+        "{projectRoot}/tsconfig.storybook.json"
+      ]
     }
   },
   "namedInputs": {
@@ -46,9 +55,29 @@
       "!{projectRoot}/eslint.config.js",
       "!{projectRoot}/cypress/**/*",
       "!{projectRoot}/**/*.cy.[jt]s?(x)",
-      "!{projectRoot}/cypress.config.[jt]s"
+      "!{projectRoot}/cypress.config.[jt]s",
+      "!{projectRoot}/**/*.stories.@(js|jsx|ts|tsx|mdx)",
+      "!{projectRoot}/.storybook/**/*",
+      "!{projectRoot}/tsconfig.storybook.json"
     ],
     "sharedGlobals": []
   },
-  "nxCloudAccessToken": "N2VjNWE3YjEtYmE0Yy00MTdhLThiY2UtMWM3NTkzNjZjYTg2fHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "N2VjNWE3YjEtYmE0Yy00MTdhLThiY2UtMWM3NTkzNjZjYTg2fHJlYWQtd3JpdGU=",
+  "generators": {
+    "@nx/react": {
+      "application": {
+        "babel": true
+      },
+      "library": {
+        "unitTestRunner": "jest"
+      }
+    }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "options": {
+        "cacheableOperations": ["build-storybook"]
+      }
+    }
+  }
 }
