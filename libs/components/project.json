@@ -18,7 +18,7 @@
         "project": "libs/components/package.json",
         "entryFile": "libs/components/src/index.ts",
         "external": ["react", "react-dom", "react/jsx-runtime"],
-        "rollupConfig": "@nx/react/plugins/bundle-rollup",
+        "rollupConfig": "libs/components/rollup.config.js",
         "compiler": "babel",
         "assets": [
           {

@@ -6,6 +6,8 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@nx/react/plugins/storybook',
+    'storybook-addon-react-router-v6',
+    'storybook-tailwind-dark-mode',
   ],
   framework: {
     name: '@storybook/react-webpack5',

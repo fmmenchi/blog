@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@fmmenchi/components": ["libs/components/src/index.ts"]
+      "@fmmenchi/components": ["libs/components/src/index.ts"],
+      "@fmmenchi/utils": ["libs/utils/src/index.ts"],
+      "@fmmenchi/utils/server": ["libs/utils/src/server.ts"],
+      "@fmmenchi/icons/*": ["libs/icons/src/lib/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
