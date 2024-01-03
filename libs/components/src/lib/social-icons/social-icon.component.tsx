@@ -22,7 +22,7 @@ const iconSizes = {
 } as const;
 type IconSize = keyof typeof iconSizes;
 
-interface SocialIconProps {
+export interface SocialIconProps {
   type: IconType;
   href: string;
   size?: IconSize;
