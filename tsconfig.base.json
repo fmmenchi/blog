@@ -15,10 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@fmmenchi/blog/features/blog-list": ["libs/blog/features/blog-list/src/index.ts"],
+      "@fmmenchi/blog/features/blog-list/server": ["libs/blog/features/blog-list/src/server.ts"],
+      "@fmmenchi/blog/shared/app-shell": ["libs/blog/shared/app-shell/src/index.ts"],
+      "@fmmenchi/blog/shared/app-shell/server": ["libs/blog/shared/app-shell/src/server.ts"],
       "@fmmenchi/components": ["libs/components/src/index.ts"],
+      "@fmmenchi/icons/*": ["libs/icons/src/lib/*"],
       "@fmmenchi/utils": ["libs/utils/src/index.ts"],
-      "@fmmenchi/utils/server": ["libs/utils/src/server.ts"],
-      "@fmmenchi/icons/*": ["libs/icons/src/lib/*"]
+      "@fmmenchi/utils/server": ["libs/utils/src/server.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
